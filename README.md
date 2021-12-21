@@ -8,3 +8,5 @@ Users can see everyone who are currently logged-in and playing the game.
 Users can direct message each other using the application.  
 Users can share multimedia content on this application.  
 Users can Live interact with each other using the application.  
+
+Co-Authors: Andrew Jank, Harishvar Kowtheeswari Srinivasan, Andy Wu
