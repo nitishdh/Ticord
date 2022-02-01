@@ -410,6 +410,6 @@ def escape_html_input(string):
     return string
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=True)
-    socketio.run(app)
+#if __name__ == "__main__":
+#    app.run(host="0.0.0.0", port=8000, debug=True)
+#    socketio.run(app)
