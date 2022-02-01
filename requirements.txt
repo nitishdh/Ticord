@@ -4,3 +4,4 @@ pymongo
 werkzeug
 bcrypt
 flask-socketio
+gunicorn
