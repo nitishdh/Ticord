@@ -25,9 +25,10 @@ app.config['upload_dir'] = upload_dir
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 # connect to mongoDB
 try:
-    mongo = pymongo.MongoClient(host="db", port=27017, username='root', password = 'pass', serverSelectionTimeoutMS=1000)
-    # mongo = pymongo.MongoClient(host="localhost", port=27017, serverSelectionTimeoutMS=1000)
-    db = mongo.cse312
+    #mongo = pymongo.MongoClient(host="db", port=27017, username='root', password = 'pass', serverSelectionTimeoutMS=1000)
+    connect_string = 'mongodb+srv://nitishdh:virat2612@cluster0.su23c.mongodb.net/mydb?retryWrites=true&w=majority'
+    mongo = pymongo.MongoClient(connect_string)
+    db = mongo.get_default_database()
     mongo.server_info()  # triggers exception if cannot connect
 except:
     print("ERROR - Cannot connect to MongoDB server: localhost:27017")
