@@ -10,3 +10,5 @@ Users can share multimedia content on this application.
 Users can Live interact with each other using the application.  
 
 Co-Authors: Andrew Jank, Harishvar Kowtheeswari Srinivasan, Andy Wu
+
+Web Application is now Live at: https://ticord.herokuapp.com/
