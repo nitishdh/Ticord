@@ -28,7 +28,8 @@ try:
     #mongo = pymongo.MongoClient(host="localhost", port=27017, serverSelectionTimeoutMS=1000)
     connect_string = 'mongodb+srv://nitishdh:virat2612@cluster0.su23c.mongodb.net/Cluster0?retryWrites=true&w=majority'
     mongo = pymongo.MongoClient(connect_string)
-    db = mongo.users
+    db = mongo["ticord"]
+    users = db["users"]
     mongo.server_info()  # triggers exception if cannot connect
 except:
     print("ERROR - Cannot connect to MongoDB server: localhost:27017")
