@@ -27,7 +27,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 try:
     #mongo = pymongo.MongoClient(host="localhost", port=27017, serverSelectionTimeoutMS=1000)
     connect_string = 'mongodb+srv://nitishdh:virat2612@cluster0.su23c.mongodb.net/Cluster0?retryWrites=true&w=majority'
-    mongo = pymongo.MongoClient(process.env.MONGODB_URI)
+    mongo = pymongo.MongoClient(os.environ['MONGODB_URI'])
     db = mongo.Cluster0
     mongo.server_info()  # triggers exception if cannot connect
 except:
